@@ -8,6 +8,7 @@ describe("HelloWorld.vue", () => {
     const wrapper = shallowMount(HelloWorld, {
       propsData: { msg }
     });
+    console.log(wrapper.text());
     expect(wrapper.text()).to.include(msg);
   });
 });
